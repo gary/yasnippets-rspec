@@ -1,0 +1,25 @@
+yasnippets snippet definitions for use with rSpec
+
+for information on yasnippets see http://code.google.com/p/yasnippet/
+for information on rSpec see http://rspec.info
+
+contents:
+
+- setup.el: a convenient way to load these snippets as programmatically, e.g.
+  (load-library (concat "your-snippets-dir" "/yasnippets-rspec/setup.el"))
+
+- rspec-snippets: the actual directory of snippets
+
+differences from the TextMate versions:
+- Controller snippets, describe blocks, matcher gain {lead,trail}ing newline
+- RESTful controller dropdown order is natural (vs. GET|POST|PUT|DELETE)
+- it block handling broken into "it" for the block form and "itd" for a
+  one line form
+- mock_with snippet order is natural (vs. mocha|flexmock|rr)
+- should{,_not} be_instance_of snippet shortcuts changed shbio and
+  shnbio for consistency.
+- dropped 'shkof' for should_not be_kind_of, opting for the more
+  consistent shnbko
+- should{,_not} eq{ua}l matcher order is now natural
+- should{_not} {match,=~} order is now natural
+- should_{redirect,render,respond} order is now natural
